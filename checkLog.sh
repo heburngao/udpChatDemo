@@ -1,1 +1,1 @@
-tail -f ./logs/server.log
+tail -f ./logs/chatsvr.log
