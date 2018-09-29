@@ -1,13 +1,13 @@
 package main
 
 import (
-	util "BuffUtil"
-	dataMgr "ConnectionDeal"
+//	util "BuffUtil"
+//	dataMgr "ConnectionDeal"
 	"fmt"
 	"net"
 	"os"
-	"time"
-	"sync"
+//	"time"
+//	"sync"
 	"strings"
 	"strconv"	
 //	"./protocol"
@@ -133,7 +133,7 @@ func goUDP() {
 	udp_addr, err := net.ResolveUDPAddr("udp4", addr + port_UDP)
 	
 	fmt.Println("address : ", udp_addr)
-	dataMgr.CheckError(err)
+	//dataMgr.CheckError(err)
 	fmt.Println("recv:1")
 
 /*
@@ -156,7 +156,7 @@ func goUDP() {
 	fmt.Println("[ UDP ] recv:2")
 	defer s.conn.Close()
 	fmt.Println("[ UDP ] recv:3")
-	dataMgr.CheckError(err)
+	//dataMgr.CheckError(err)
 
 	fmt.Println("[ UDP ] recv:4 " )
 	
@@ -185,7 +185,7 @@ func checkError(err error){
 //=============================
 
 //########/###### udp ########
-
+/*
 func recvUDPmsg(connUDP *net.UDPConn) {
 	if len(dataMgr.Clients_UDP) >= 200 {
 
@@ -252,3 +252,4 @@ func UDP_handler(err error, connUDP *net.UDPConn, buffer []byte, size int , addr
 	go dataMgr.UDP_Receive(cmd, pb[0:], *connUDP , addr)
 
 }
+*/
