@@ -18,7 +18,7 @@ var PT = fmt.Printf //Println
 
 //=============================
 const(
-	port_UDP string = ":52020"
+	port_UDP string = ":2500"
 	addr string = "0.0.0.0"
 )
 type Client struct{

@@ -1,2 +1,2 @@
-./client 192.168.230.129:52020
+./client as.gaohebing.xyz:2500
 
